@@ -1,2 +1,1 @@
-# LPMS
-Line printer management system
+# Line printer management system
