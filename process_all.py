@@ -3,7 +3,7 @@ import glob
 import datetime
 import shutil
 import json
-
+# 27/9/23
 def process_all_files_user(username, path):
     # Use glob.glob to collect files from the specified paths
     txt_files = glob.glob(os.path.join(path, "*.txt"))
