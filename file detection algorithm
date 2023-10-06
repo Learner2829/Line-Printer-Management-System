@@ -1,0 +1,24 @@
+import os
+#give path
+
+folder_path=r"Z:\data\print"
+
+
+# List all files in the folder
+file_list = os.listdir(folder_path)
+#checking file txt,cpp,c
+
+for file in file_list:
+        if (file[-4:])==".txt" or file[-4:]==".cpp" or file[-2:]==".c":
+            folder_path=folder_path + "\\"
+            name=folder_path+file
+            if os.path.exists(name):
+                with open(name,"r") as f:
+                    text=f.read()
+                    print(text)
+            else:
+                print(f"The File '{file}' does not exist.")
+        else:
+            #  continue
+            print("This file not txt")
+            
